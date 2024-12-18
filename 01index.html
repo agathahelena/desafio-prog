@@ -9,15 +9,22 @@
     let primo = [];
     let divisivel = 0;
 
-    for (let contador = inicio; contador < final; contador++) {
-        if (contador %  === 0) {
+   
+    for (let index = inicio; index < final; index++) {
+       
+        
+      
+    
+    
+    for (let contador = 1; contador <= index; contador++) {
+        if (index % contador === 0) {
             divisivel = divisivel + 1;
-            primo.push(contador)
         }
     }
     if (divisivel === 2) {
         primo.push(contador);
     }
+}
 
     document.write(`O número ${primo} são números primos`);
 
